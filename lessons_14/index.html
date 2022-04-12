@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Команды</title>
+</head>
+<body>
+<button type ="button" name="button" onclick="add_to_group ()">Группировать</button>
+<script>
+	function getRandomInt(max) {
+  		return Math.floor(Math.random() * max);
+    }
+
+	let members = ['Amanda Murphy','Ernesto Walton', 'Antoinette Thornton', 
+                   	'Otis Lloyd', 'Dana Haynes', 'Lester Myers', 
+                   	'Emily Graham', 'Amos Mcbride', 'Bryan Berry', 
+                   	'Carlton Barnes', 'Ken Floyd','Shannon Johnston', 
+                   	'Louis Mccormick', 'Leon Leonard'];
+
+	let gorup1 = [];
+	let gorup2 = [];
+
+	function add_to_group () {
+		let index = getRandomInt(members.length - 1);
+		gorup1.push(members[index]);
+		members.splice(index, 1);
+		console.log(members);
+	}
+
+	add_to_group ();
+
+	console.log(gorup1, gorup2);
+
+</script>
+</body>
+</html>
