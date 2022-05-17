@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карусель</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+<style>
+	.custom-carousel-item {
+		display: none;
+	}
+
+	.custom-carousel-item.active {
+		display: block;
+	}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a href="index.html" class="navbar-brand"> Книжный форум </a>
+
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="new.html" class="nav-link"> Новинки </a>
+						</li>
+						<li class="navbar-item">
+							<a href="kl.html" class="nav-link"> Самый популярный цикл </a>
+						</li>
+						<li class="navbar-item">
+							<a href="red.html" class="nav-link"> Выбор редакции </a>
+						</li>
+						<li class="navbar-item">
+							<a href="tovar.html" class="nav-link"> Магазин </a>
+						</li>
+						<li class="navbar-item">
+							<a href="carousel.html" class="nav-link active"> Фотографии </a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</nav>
+
+		<div class="row">
+			<div class="col-5">
+				<div id="carouselExampleControls" class="custom-carousel slide">
+  <div class="custom-carousel-inner">
+    <div class="custom-carousel-item active">
+      <img src="imageCor/1.jpg" class="d-block w-100" alt="...">
+      <p class="custom-carousel-text"> Дом Стивена Кинга, где были написаны все его произведения.</p>
+    </div>
+    <div class="custom-carousel-item">
+      <img src="imageCor/2.jpg" class="d-block w-100" alt="...">
+      <p class="custom-carousel-text"> "Король ужасов" </p>
+    </div>
+    <div class="custom-carousel-item">
+      <img src="imageCor/4.jpg" class="d-block w-100" alt="...">
+      <p class="custom-carousel-text"> Стивен Кинг на презентации книги "Доктор Сон" </p>
+    </div>
+  </div>
+  <button class="custom-carousel-control-prev" type="button">
+    <span class="custom-carousel-control-prev-icon">Предыдущая</span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="custon-carousel-control-next" type="button">
+    <span class="custon-carousel-control-next-icon">Следующая</span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="carousel.js"></script>
+
+</body>
+</html> 
